@@ -100,7 +100,7 @@
 
 
 
-        <theme name="Les critères de cyclabilité"  collapsed="true" id="criteres" icon="fas fa-globe">
+        <theme name="Les critères utilisés"  collapsed="true" id="criteres" icon="fas fa-globe">
 
 
             <layer id="ddtm35:cyclable_amgt_cyclables_osm"
