@@ -45,7 +45,7 @@ function legende_picto() {
 
 {{#features}}
 let res = Math.round((Math.round(({{cyclab}}) * 100) / 100)*100)
-if (res > 100) {
+if (res >= 100) {
 	document.getElementById("cyclab").innerHTML = '100'
 }
 
