@@ -43,10 +43,17 @@ function legende_picto() {
 }
 
 
-document.getElementById("cyclab").innerHTML = Math.round((Math.round((document.getElementById("cyclab").innerHTML) * 100) / 100)*100);
-
-
 {{#features}}
+let res = Math.round((Math.round(({{cyclab}}) * 100) / 100)*100)
+if (res >= 100) {
+	document.getElementById("cyclab").innerHTML = '100'
+}
+
+if (res < 100) {
+	document.getElementById("cyclab").innerHTML = res
+}
+
+// document.getElementById("cyclab").innerHTML = Math.round((Math.round(({{cyclab}}) * 100) / 100)*100);
 
 // MOTIFS DE DEPLACEMENTS
 if ({{c_alim}}+ {{c_commerc}} + {{c_enseigne}} + {{c_loisirs}} + {{c_touisme}} + {{c_transpor}} >= 1) {

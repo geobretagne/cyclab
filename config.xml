@@ -4,7 +4,8 @@
      title="CycLAB - Indice de cyclabilité"
      titlehelp="CycLAB - Indice de cyclabilité"
      mouseposition="true" 
-     logo="" 
+     logo=""
+     showhelp ="true"
      help="https://geobretagne.fr/apps/cyclab/pages/cyclab_help.html" 
      measuretools="true" 
      exportpng="true" 
@@ -99,7 +100,7 @@
 
 
 
-        <theme name="Les critères de cyclabilité"  collapsed="true" id="criteres" icon="fas fa-globe">
+        <theme name="Les critères utilisés"  collapsed="true" id="criteres" icon="fas fa-globe">
 
 
             <layer id="ddtm35:cyclable_amgt_cyclables_osm"
@@ -303,7 +304,7 @@
                     attribution="Source: DDTM 35" 
                     metadata="" 
                     metadata-csw="">
-            </layer> -->
+            </layer> 
             <layer id="ddtm35:cyclable_grille_800m"
                 name="Grille (données brutes)"
                 exclusive="false"
@@ -320,7 +321,7 @@
                 attribution="Source: DDTM 35"
                 metadata=""
                 metadata-csw="">
-            </layer>
+            </layer>-->
         </theme>
 
     </themes>
