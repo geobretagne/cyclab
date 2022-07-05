@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application 
+    <application
      title="CycLAB - Indice de cyclabilité"
      titlehelp="CycLAB - Indice de cyclabilité"
-     mouseposition="true" 
+     mouseposition="true"
      logo=""
      showhelp ="true"
-     help="https://geobretagne.fr/apps/cyclab/pages/cyclab_help.html" 
-     measuretools="true" 
-     exportpng="true" 
+     help="https://geobretagne.fr/apps/cyclab/pages/cyclab_help.html"
+     measuretools="true"
+     exportpng="true"
      style="css/themes/green_sea.css"
      />
 
 
-    <mapoptions maxzoom="19" 
-        projection="EPSG:3857" 
-        center="-110750.13768758904,6145000.57790189" 
-        zoom="9" 
+    <mapoptions maxzoom="19"
+        projection="EPSG:3857"
+        center="-110750.13768758904,6145000.57790189"
+        zoom="9"
         projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244"
     />
-  
+
     <baselayers style="gallery">
-        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png" 
-            url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
+            url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20"
             visible="true" attribution="Map tiles by  &lt;a href='https://cartodb.com/attributions' target='_blank'>CartoDb &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0 &lt;/a>" />
-		<baselayer visible="false" id="osm_google" 
-			thumbgallery="img/basemap/osm_google.png" title="GéoBretagne" label="OpenStreetMap GéoBretagne" type="WMS" url="https://osm.geobretagne.fr/gwc01/service/wms" layers="osm:google" format="image/png" 
+		<baselayer visible="false" id="osm_google"
+			thumbgallery="img/basemap/osm_google.png" title="GéoBretagne" label="OpenStreetMap GéoBretagne" type="WMS" url="https://osm.geobretagne.fr/gwc01/service/wms" layers="osm:google" format="image/png"
             attribution="GéoBretagne. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
 
 
 
-        
-        <baselayer  type="OSM" id="darkmatter" label="Dark Matter" title="CartoDb" thumbgallery="img/basemap/darkmatter.png" 
-            url="https://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png" maxzoom="20" 
+
+        <baselayer  type="OSM" id="darkmatter" label="Dark Matter" title="CartoDb" thumbgallery="img/basemap/darkmatter.png"
+            url="https://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png" maxzoom="20"
             visible="false" attribution="Map tiles by  &lt;a href='https://cartodb.com/attributions' target='_blank'>CartoDb &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0 &lt;/a>" />
-		<baselayer visible="false" id="ortho1" 
-			thumbgallery="img/basemap/ortho.jpg" title="GéoBretagne" label="Photo aérienne GéoBretagne" type="WMTS" url="https://tile.geobretagne.fr/gwc02/service/wmts" layers="satellite" format="image/png" style="_null" matrixset="EPSG:3857" fromcapacity="false" 
+		<baselayer visible="false" id="ortho1"
+			thumbgallery="img/basemap/ortho.jpg" title="GéoBretagne" label="Photo aérienne GéoBretagne" type="WMTS" url="https://tile.geobretagne.fr/gwc02/service/wmts" layers="satellite" format="image/png" style="_null" matrixset="EPSG:3857" fromcapacity="false"
 			attribution="&lt;a href='https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731' target='_blank' >Partenaires GéoBretagne - IGN&lt;/a>"/>
-        
-    </baselayers>    
+
+    </baselayers>
 
     <proxy url=""/>
 
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par la BAN"/>
-    <searchparameters bbox="false" localities="true" features="false" />   
+    <searchparameters bbox="false" localities="true" features="false" />
 
-    <themes> 
+    <themes>
         <theme name="Le territoire"  collapsed="true" id="territoire" icon="fas fa-globe">
             <layer id="departement_metro" name="Ille-et-Vilaine" visible="false" queryable="false" toplayer="false"
                     customcontrol="false"
@@ -54,18 +54,18 @@
                     url="https://geobretagne.fr/geoserver/ign/wms"
                     filter="insee_dep NOT IN ('35')"
                     tooltip="false" tooltipenabled="false"
-                    attribution="source : IGN" 
-                    metadata="" 
+                    attribution="source : IGN"
+                    metadata=""
                     metadata-csw="">
             </layer>
 
             <layer id="zone" name="Zone d'étude" visible="true" queryable="false" toplayer="false"
                     customcontrol="false"
-                    type="customlayer" style="" opacity="1" legendurl="img/invisible.png" 
-                    url="https://geobretagne.fr/apps/cyclab/customlayers/zone.js" 
+                    type="customlayer" style="" opacity="1" legendurl="img/invisible.png"
+                    url="https://geobretagne.fr/apps/cyclab/customlayers/zone.js"
                     tooltip="false" tooltipenabled="false"
-                    attribution="Source : DDTM 35" 
-                    metadata="" 
+                    attribution="Source : DDTM 35"
+                    metadata=""
                     metadata-csw="">
             </layer>
 
@@ -75,23 +75,23 @@
                     url="https://geobretagne.fr/apps/cyclab/customlayers/epci.js"
                     fields="nom_epci"
                     tooltip="true" tooltipenabled="false"
-                    attribution="Source : DDTM 35" 
-                    metadata="" 
+                    attribution="Source : DDTM 35"
+                    metadata=""
                     metadata-csw="">
             </layer>
 
 
-            <layer id="communes" name="Commune" visible="false" queryable="false" 
-                    fields="NOM_COM" aliases="Nom" 
-                    type="customlayer" style="" opacity="1" legendurl="img/invisible.png" 
-                    url="https://geobretagne.fr/apps/cyclab/customlayers/communes.js" 
+            <layer id="communes" name="Commune" visible="false" queryable="false"
+                    fields="NOM_COM" aliases="Nom"
+                    type="customlayer" style="" opacity="1" legendurl="img/invisible.png"
+                    url="https://geobretagne.fr/apps/cyclab/customlayers/communes.js"
                     tooltip="true" tooltipenabled="false"
-                    attribution="Source : DDTM 35" 
+                    attribution="Source : DDTM 35"
                     metadata-csw="">
-            </layer>	 
+            </layer>
 
 
-            
+
 
 
         </theme>
@@ -114,7 +114,7 @@
                 opacity="1"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/amg_cyclo_osm.sld"
+                sld="https://geobretagne.fr/apps/cyclab/sld/amg_cyclo_osm.sld"
                 tooltip="false"
                 tooltipenabled="false"
                 attribution="Données OSM"
@@ -133,7 +133,7 @@
                 opacity="1"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/amg_cyclo_on3v.sld"
+                sld="https://geobretagne.fr/apps/cyclab/sld/amg_cyclo_on3v.sld"
                 tooltip="false"
                 tooltipenabled="false"
                 attribution="Données ON3V"
@@ -141,7 +141,7 @@
                 metadata-csw="">
             </layer>
 
- 
+
             <layer id="ddtm35:cyclable_grille_800m"
                 name="Motifs de déplacements"
                 visible="false"
@@ -154,12 +154,12 @@
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
                 sld="
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_alim.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_commerces.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_enseignement.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_loisirs.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_tourisme.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_transport.sld,"
+                https://geobretagne.fr/apps/cyclab/sld/grd_alim.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_commerces.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_enseignement.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_loisirs.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_tourisme.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_transport.sld,"
                 stylesalias="
                 Alimentation,
                 Commerces et services,
@@ -183,9 +183,9 @@
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
                 sld="
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_repmod.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_fdt_quanti.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_fdom.sld,"
+                https://geobretagne.fr/apps/cyclab/sld/grd_repmod.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_fdt_quanti.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_fdom.sld,"
                 stylesalias="
                 Rep. modal vers les gares,
                 Flux professionels,
@@ -205,10 +205,10 @@
                 opacity="0.8"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_poid_pop.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_effectifs_salaries.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_amgt_cyclo.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_relief.sld,"
+                sld="https://geobretagne.fr/apps/cyclab/sld/grd_poid_pop.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_effectifs_salaries.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_amgt_cyclo.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_relief.sld,"
                 stylesalias="
                 Poids de la population,
                 Secteurs d'emploi,
@@ -218,7 +218,7 @@
                 metadata=""
                 metadata-csw="">
 
-            </layer>  
+            </layer>
 
         </theme>
 
@@ -236,7 +236,7 @@
                 legendurl=""
                 opacity="1"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_quanti_10cl.sld"
+                sld="https://geobretagne.fr/apps/cyclab/sld/grd_quanti_10cl.sld"
                 jsonfields="NOM_COM"
                 infoformat="application/vnd.ogc.gml"
                 infopanel="right-panel"
@@ -259,7 +259,7 @@
                 opacity="1"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_quali_4cl.sld"
+                sld="https://geobretagne.fr/apps/cyclab/sld/grd_quali_4cl.sld"
                 tooltip="false"
                 tooltipenabled="false"
                 attribution="Source: DDTM 35. Les cellules où la cyclabilité est inférieure à la moyenne départementale sont considérées comme négligeables et ne sont pas affichées. Les limites entres les autres classes sont déterminées par la méthode des seuils naturels."
@@ -285,7 +285,7 @@
                 opacity="1"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/trafic.sld"
+                sld="https://geobretagne.fr/apps/cyclab/sld/trafic.sld"
                 tooltip="false"
                 tooltipenabled="false"
                 attribution="Données CD35 2019"
@@ -298,13 +298,13 @@
 
 <!--             <layer id="schema_exist" name="Schémas cyclables existants" visible="false" queryable="true" toplayer="true"
                     customcontrol="false"
-                    type="customlayer" style="" opacity="1" legendurl="" 
-                    url="https://geobretagne.fr/apps/cyclab/customlayers/sdc.js" 
+                    type="customlayer" style="" opacity="1" legendurl=""
+                    url="https://geobretagne.fr/apps/cyclab/customlayers/sdc.js"
                     tooltip="false" tooltipenabled="false"
-                    attribution="Source: DDTM 35" 
-                    metadata="" 
+                    attribution="Source: DDTM 35"
+                    metadata=""
                     metadata-csw="">
-            </layer> 
+            </layer>
             <layer id="ddtm35:cyclable_grille_800m"
                 name="Grille (données brutes)"
                 exclusive="false"
