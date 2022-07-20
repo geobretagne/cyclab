@@ -114,7 +114,7 @@
                 opacity="1"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/amg_cyclo_osm.sld"
+                sld="https://geobretagne.fr/apps/cyclab/sld/amg_cyclo_osm.sld"
                 tooltip="false"
                 tooltipenabled="false"
                 attribution="Données OSM"
@@ -133,7 +133,7 @@
                 opacity="1"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/amg_cyclo_on3v.sld"
+                sld="https://geobretagne.fr/apps/cyclab/sld/amg_cyclo_on3v.sld"
                 tooltip="false"
                 tooltipenabled="false"
                 attribution="Données ON3V"
@@ -154,12 +154,12 @@
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
                 sld="
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_alim.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_commerces.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_enseignement.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_loisirs.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_tourisme.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_transport.sld,"
+                https://geobretagne.fr/apps/cyclab/sld/grd_alim.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_commerces.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_enseignement.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_loisirs.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_tourisme.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_transport.sld,"
                 stylesalias="
                 Alimentation,
                 Commerces et services,
@@ -183,9 +183,9 @@
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
                 sld="
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_repmod.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_fdt_quanti.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_fdom.sld,"
+                https://geobretagne.fr/apps/cyclab/sld/grd_repmod.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_fdt_quanti.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_fdom.sld,"
                 stylesalias="
                 Rep. modal vers les gares,
                 Flux professionels,
@@ -205,10 +205,10 @@
                 opacity="0.8"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_poid_pop.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_effectifs_salaries.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_amgt_cyclo.sld,
-                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_relief.sld,"
+                sld="https://geobretagne.fr/apps/cyclab/sld/grd_poid_pop.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_effectifs_salaries.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_amgt_cyclo.sld,
+                https://geobretagne.fr/apps/cyclab/sld/grd_relief.sld,"
                 stylesalias="
                 Poids de la population,
                 Secteurs d'emploi,
@@ -236,7 +236,7 @@
                 legendurl=""
                 opacity="1"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_quanti_10cl.sld"
+                sld="https://geobretagne.fr/apps/cyclab/sld/grd_quanti_10cl.sld"
                 jsonfields="NOM_COM"
                 infoformat="application/vnd.ogc.gml"
                 infopanel="right-panel"
@@ -259,7 +259,7 @@
                 opacity="1"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_quali_4cl.sld"
+                sld="https://geobretagne.fr/apps/cyclab/sld/grd_quali_4cl.sld"
                 tooltip="false"
                 tooltipenabled="false"
                 attribution="Source: DDTM 35. Les cellules où la cyclabilité est inférieure à la moyenne départementale sont considérées comme négligeables et ne sont pas affichées. Les limites entres les autres classes sont déterminées par la méthode des seuils naturels."
@@ -285,7 +285,7 @@
                 opacity="1"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/trafic.sld"
+                sld="https://geobretagne.fr/apps/cyclab/sld/trafic.sld"
                 tooltip="false"
                 tooltipenabled="false"
                 attribution="Données CD35 2019"
